@@ -3,7 +3,7 @@ let tuits=posts;
 
 const createTuit = (req, res) =>{
     const newTuit=req.body;
-    console.log(newTuit)
+    console.log("this is new tuit",newTuit)
     newTuit._id=(new Date()).getTime();
     newTuit.likes=0;
     newTuit.liked=false;
